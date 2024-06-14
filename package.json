@@ -1,0 +1,45 @@
+{
+    "name": "chilean-launcher",
+    "preductname": "Chilean-launcher",
+    "version": "1.0.1",
+    "description": "Made: @LmLeex",
+    "main": "src/app.js",
+    "author": {
+        "name": "lmleexpe",
+        "email": "freysxr@gmail.com",
+        "url": "https://github.com/lmleex"
+    },
+    "url": "https://chiletianyalan.000webhostapp.com/datos/",
+    "scripts": {
+        "start": "cross-env-shell NODE_ENV=dev electron .",
+        "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
+        "build": "node build.js --obf=true --build=platform",
+        "icon": "node build.js --icon=https://cdn.discordapp.com/attachments/1230173408248070234/1230914561847197787/foto.png?ex=66350d84&is=66229884&hm=2314a57debe3e659f2b8b275d921f2c668b748729eacefeb8f70240bde7f056a&"
+    },
+    "license": "CCANC",
+    "nodemonConfig": {
+        "ext": "js,html,css",
+        "ignore": "**/test"
+    },
+    "dependencies": {
+        "discord-rpc": "^4.0.1",
+        "electron-updater": "^6.1.4",
+        "minecraft-java-core": "^3.9.1",
+        "node-bdd": "^2.0.3",
+        "node-fetch": "^2.7.0",
+        "xml-js": "^1.6.11"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "electron": "^29.1.6",
+        "electron-builder": "^24.6.4",
+        "javascript-obfuscator": "^4.1.0",
+        "jimp": "^0.22.10",
+        "nodemon": "^3.0.1",
+        "png2icons": "^2.0.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lmleex/Chilean-Launcher.git"
+    }
+}
